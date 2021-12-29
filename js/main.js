@@ -268,7 +268,7 @@ function Answer() {
   answer.className = 'answer ';
 
   //IF THE ANSWER IS CORRECT
-  if (answerText == Normalize(questions[index].answer)) {
+  if (Normalize(answerText) == Normalize(questions[index].answer)) {
     answer.className += 'good';
     letters[index].correct = true;
     corrects++;
